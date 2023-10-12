@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-dals
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/rhtap-demo-synf-tenant/rhtap-demo-app/hacbs-test-project-dals@sha256:5dee653197bbe1437803996049938fb45ff19b701334d26a4f783b65923fd48a
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
